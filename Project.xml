@@ -29,7 +29,9 @@
 
 	<!-- _____________________________ Path Settings ____________________________ -->
 
-	<set name="BUILD_DIR" value="export" />
+	<set name="BUILD_DIR" value="export/debug" if="debug"/>
+	<set name="BUILD_DIR" value="export/release" unless="debug"/>
+
 	<source path="source" />
 	<assets path="assets" />
 
@@ -45,6 +47,10 @@
 
 	<!--In case you want to use nape with flixel-->
 	<!--<haxelib name="nape-haxe4" />-->
+
+	<!-- ____________________________ Project Defines ___________________________ -->
+
+	<define name="DEBUG_FEATURES" if="debug"/>
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
 
