@@ -1,0 +1,8 @@
+# Haxe Flixel
+export/
+.DS_Store
+
+# Adobe Animate
+RECOVER_**.fla
+
+# Misc
