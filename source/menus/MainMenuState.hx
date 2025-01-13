@@ -1,4 +1,4 @@
-package;
+package menus;
 
 class MainMenuState extends FlxState
 {
